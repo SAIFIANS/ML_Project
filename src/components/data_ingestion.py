@@ -1,6 +1,6 @@
 import os
 import sys
-from src.exception import CustomerException
+from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
 
@@ -41,7 +41,7 @@ class DataIngestion:
                 
             )
         except Exception as e:
-            raise CustomerException(e,sys)
+            raise CustomException(e,sys)
         
         
 if __name__=="__main__":
